@@ -13,3 +13,13 @@ Paste the contents of the file into your SQL query window
 **IF YOU ARE NOT ADDING ANY MANUAL ENTRIES, DELETE THE COMMA AT THE END**
 
 Run the query
+
+
+hint:
+
+INSERT INTO departments
+SELECT DISTINCT departmentno, department
+FROM employees;
+
+ALTER TABLE employees
+DROP COLUMN department
