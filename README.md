@@ -10,4 +10,6 @@ Find the output file stored under "employees.txt"
 
 Paste the contents of the file into your SQL query window
 
-**If you are not adding any more entries yourself, delete the comma at the end**
+**IF YOU ARE NOT ADDING ANY MANUAL ENTRIES, DELETE THE COMMA AT THE END**
+
+Run the query
