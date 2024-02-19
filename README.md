@@ -9,3 +9,5 @@ Run employees_generator.py
 Find the output file stored under "employees.txt"
 
 Paste the contents of the file into your SQL query window
+
+**If you are not adding any more entries yourself, delete the comma at the end**
