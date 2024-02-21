@@ -26,15 +26,19 @@ while amount > 10000:
 for name in range(amount):
     first_name = random.choice(first_names)
     last_name = random.choice(last_names)
-    
+
     shuffled_names.append(first_name + " " + last_name)
 
 with open(f"{path}/{output_file}", "w+") as f:
     f.write("INSERT INTO employees\nVALUES\n")
     for x, name in enumerate(shuffled_names):
-        
-        empid = format(x, '04d')
+
+        empid = format(x, "04d")
         employee = employees.Employees(empid, name)
-        f.write(f'("E{employee.id}", "{employee.name}", {employee.departmentid}, "{employee.department}", {employee.wage}),\n')
-        
-print(f"Generated {len(shuffled_names)} names!\nResults stored in \"{path}\" under \"{output_file}\"")
+        f.write(
+            f'("E{employee.id}", "{employee.name}", {employee.departmentid}, "{employee.department}", {employee.wage}),\n'
+        )
+
+print(
+    f'Generated {len(shuffled_names)} names!\nResults stored in "{path}" under "{output_file}"'
+)
